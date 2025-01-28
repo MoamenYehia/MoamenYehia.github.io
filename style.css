@@ -42,7 +42,7 @@ header img {
 }
 
 h2 {
-    color: #DDA853; /* Gold for section titles */
+    color: #FFF4B7; /* Gold for section titles */
     margin-bottom: 10px;
 }
 
@@ -55,7 +55,7 @@ h2 {
     background: #FBF5DD; /* Light cream for list items */
     margin: 5px 0;
     padding: 10px;
-    border-left: 5px solid #DDA853; /* Gold accent bar */
+    border-left: 5px solid #FFF4B7; /* Gold accent bar */
 }
 
 .app-item {
@@ -72,7 +72,7 @@ h2 {
 }
 
 a {
-    color: #DDA853; /* Gold for links */
+    color: #FFF4B7; /* Gold for links */
     text-decoration: none;
 }
 
