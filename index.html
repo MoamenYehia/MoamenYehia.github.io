@@ -23,136 +23,101 @@
     </div>
   </section>
 
-<section class="projects" id="projects">
+  <section class="projects" id="projects">
     <h2>My Projects</h2>
 
     <div class="project-category">
-        <h3>Mobile Apps (Flutter)</h3>
-        <div class="project-grid">
-            <div class="project-card" data-project-id="real-estate-app">
-                <img src="assets\projects\real-estate\real-state1.jpg" alt="Real Estate App" class="project-thumbnail">
-                <div class="project-info">
-                    <h4>Real Estate App</h4>
-                    <p>Browse and search properties with sleek UI and smooth filtering.</p>
-                    <div class="tech-stack">Flutter • Firebase • Dart</div>
-                    <div class="project-links">
-                        <a href="#" target="_blank" class="btn">Demo</a>
-                        <a href="#" target="_blank" class="btn">GitHub</a>
-                    </div>
-                </div>
+      <h3>Mobile Apps (Flutter)</h3>
+      <div class="project-grid">
+        <div class="project-card" data-project-id="real-estate-app">
+          <img src="assets\projects\real-estate\real-state1.jpg" alt="Real Estate App" class="project-thumbnail">
+          <div class="project-info">
+            <h4>Real Estate App</h4>
+            <p>Browse and search properties with sleek UI and smooth filtering.</p>
+            <div class="tech-stack">Flutter • Firebase • Dart</div>
+            <div class="project-links">
+              <a href="#" target="_blank" class="btn">Demo</a>
+              <a href="#" target="_blank" class="btn">GitHub</a>
             </div>
+          </div>
+        </div>
 
-            <div class="project-card" data-project-id="grocery-app">
-                <img src="assets\projects\grocery_app\GroceryApp1.jpg" alt="Grocery App" class="project-thumbnail">
-                <div class="project-info">
-                    <h4>Grocery App</h4>
-                    <p>App for market with categories, sales, and fun interface.</p>
-                    <div class="tech-stack">Flutter • Dart</div>
-                    <div class="project-links">
-                        <a href="#" target="_blank" class="btn">Demo</a>
-                        <a href="#" target="_blank" class="btn">GitHub</a>
-                    </div>
-                </div>
+        <div class="project-card" data-project-id="grocery-app">
+          <img src="assets\projects\grocery_app\GroceryApp1.jpg" alt="Grocery App" class="project-thumbnail">
+          <div class="project-info">
+            <h4>Grocery App</h4>
+            <p>App for market with categories, sales, and fun interface.</p>
+            <div class="tech-stack">Flutter • Dart</div>
+            <div class="project-links">
+              <a href="#" target="_blank" class="btn">Demo</a>
+              <a href="#" target="_blank" class="btn">GitHub</a>
             </div>
+          </div>
+        </div>
 
-            <div class="project-card" data-project-id="meal-app">
-                <img src="assets\projects\Meal_app\foodCategories1.jpg" alt="Meal App" class="project-thumbnail">
-                <div class="project-info">
-                    <h4>Meal App</h4>
-                    <p>App for Meal recipes with categories, instructions & Vegan & vegetarian option.</p>
-                    <div class="tech-stack">Flutter • Dart</div>
-                    <div class="project-links">
-                        <a href="#" target="_blank" class="btn">Demo</a>
-                        <a href="#" target="_blank" class="btn">GitHub</a>
-                    </div>
-                </div>
+        <div class="project-card" data-project-id="meal-app">
+          <img src="assets\projects\Meal_app\foodCategories1.jpg" alt="Meal App" class="project-thumbnail">
+          <div class="project-info">
+            <h4>Meal App</h4>
+            <p>App for Meal recipes with categories, instructions & Vegan & vegetarian option.</p>
+            <div class="tech-stack">Flutter • Dart</div>
+            <div class="project-links">
+              <a href="#" target="_blank" class="btn">Demo</a>
+              <a href="#" target="_blank" class="btn">GitHub</a>
             </div>
+          </div>
+        </div>
 
-            </div>
+      </div>
     </div>
 
     <div class="project-category">
-        <h3>AI/Machine Learning Projects</h3>
-        <div class="project-grid">
-            <div class="project-card" data-project-id="ai-project-1">
-                <img src="assets/images/placeholder-ai.jpg" alt="AI Project Placeholder" class="project-thumbnail">
-                <div class="project-info">
-                    <h4>AI Project Title</h4>
-                    <p>A brief description of your AI project.</p>
-                    <div class="tech-stack">Python • TensorFlow • Keras</div>
-                    <div class="project-links">
-                        <a href="#" target="_blank" class="btn">Demo</a>
-                        <a href="#" target="_blank" class="btn">GitHub</a>
-                    </div>
-                </div>
+      <h3>AI/Machine Learning Projects</h3>
+      <div class="project-grid">
+        <div class="project-card" data-project-id="ai-project-1">
+          <img src="assets/images/placeholder-ai.jpg" alt="AI Project Placeholder" class="project-thumbnail">
+          <div class="project-info">
+            <h4>AI Project Title</h4>
+            <p>A brief description of your AI project.</p>
+            <div class="tech-stack">Python • TensorFlow • Keras</div>
+            <div class="project-links">
+              <a href="#" target="_blank" class="btn">Demo</a>
+              <a href="#" target="_blank" class="btn">GitHub</a>
             </div>
-            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-</section>
+  </section>
 
-  <script>
-    function openModal(id) {
-      document.getElementById(id).style.display = 'block';
-    }
-
-    function closeModal(id) {
-      document.getElementById(id).style.display = 'none';
-    }
-
-    // Basic slider logic
-    let currentSlide = 0;
-    function showSlide(index) {
-      const slides = document.querySelectorAll('.modal .slide');
-      slides.forEach((slide, i) => {
-        slide.classList.remove('active');
-        if (i === index) slide.classList.add('active');
-      });
-    }
-
-    function nextSlide() {
-      const slides = document.querySelectorAll('.modal .slide');
-      currentSlide = (currentSlide + 1) % slides.length;
-      showSlide(currentSlide);
-    }
-
-    function prevSlide() {
-      const slides = document.querySelectorAll('.modal .slide');
-      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-      showSlide(currentSlide);
-    }
-
-    // Initialize first slide
-    document.addEventListener("DOMContentLoaded", () => {
-      showSlide(currentSlide);
-    });
-  </script>
+  <script src="script.js"></script>
 
 
 </body>
 
 <div id="project-modal" class="project-modal">
-    <div class="modal-content">
-        <span class="close-button">&times;</span>
-        <div class="modal-grid-layout">
-            <div class="modal-image-gallery">
-                <div class="gallery-inner">
-                    </div>
-                <button class="gallery-nav prev">&#10094;</button>
-                <button class="gallery-nav next">&#10095;</button>
-            </div>
-
-            <div class="modal-details">
-                <h3 id="modal-project-title">Project Title</h3>
-                <p id="modal-project-description">Detailed description of the project goes here.</p>
-                <div class="tech-stack" id="modal-project-tech"></div>
-                <div class="project-links">
-                    <a href="#" target="_blank" class="btn" id="modal-demo-link">Demo</a>
-                    <a href="#" target="_blank" class="btn" id="modal-github-link">GitHub</a>
-                </div>
-                </div>
+  <div class="modal-content">
+    <span class="close-button">&times;</span>
+    <div class="modal-grid-layout">
+      <div class="modal-image-gallery">
+        <div class="gallery-inner">
         </div>
+        <button class="gallery-nav prev">&#10094;</button>
+        <button class="gallery-nav next">&#10095;</button>
+      </div>
+
+      <div class="modal-details">
+        <h3 id="modal-project-title">Project Title</h3>
+        <p id="modal-project-description">Detailed description of the project goes here.</p>
+        <div class="tech-stack" id="modal-project-tech"></div>
+        <div class="project-links">
+          <a href="#" target="_blank" class="btn" id="modal-demo-link">Demo</a>
+          <a href="#" target="_blank" class="btn" id="modal-github-link">GitHub</a>
+        </div>
+      </div>
     </div>
+  </div>
 </div>
 
 

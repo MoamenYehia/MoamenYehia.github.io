@@ -7,9 +7,9 @@ const projectsData = {
         demoLink: "https://example.com/real-estate-demo", // Replace with actual link
         githubLink: "https://github.com/MoamenYehia/real-estate-app", // Replace with actual link
         images: [
-            "assets\projects\real-estate\real-state1.jpg",
-            "assets\projects\real-estate\real-state2.jpg", // Add more images here (you'll need to create them)
-            "assets\projects\real-estate\real-state3.jpg"
+            "assets/projects/real-estate/real-state1.jpg",
+            "assets/projects/real-estate/real-state2.jpg", // Add more images here (you'll need to create them)
+            "assets/projects/real-estate/real-state3.jpg"
         ]
     },
     "grocery-app": {
@@ -19,7 +19,7 @@ const projectsData = {
         demoLink: "https://example.com/grocery-demo", // Replace with actual link
         githubLink: "https://github.com/MoamenYehia/grocery-app", // Replace with actual link
         images: [
-            "assets\projects\grocery_app\GroceryApp1.jpg",
+            "assets/projects/grocery_app/GroceryApp1.jpg",
             
         ]
     },
@@ -30,12 +30,12 @@ const projectsData = {
         demoLink: "https://example.com/meal-app-demo", // Replace with actual link
         githubLink: "https://github.com/MoamenYehia/meal-app", // Replace with actual link
         images: [
-            "assets\projects\Meal_app\foodCategories1.jpg",
-            "assets\projects\Meal_app\foodCategories2.jpg",
-            "assets\projects\Meal_app\foodCategories3.jpg",
-            "assets\projects\Meal_app\foodCategories4.jpg",
-            "assets\projects\Meal_app\foodCategories5.jpg",
-            "assets\projects\Meal_app\foodCategories6.jpg",
+            "assets/projects/Meal_app/foodCategories1.jpg",
+            "assets/projects/Meal_app/foodCategories2.jpg",
+            "assets/projects/Meal_app/foodCategories3.jpg",
+            "assets/projects/Meal_app/foodCategories4.jpg",
+            "assets/projects/Meal_app/foodCategories5.jpg",
+            "assets/projects/Meal_app/foodCategories6.jpg",
         ]
     },
     // Add data for your AI projects here when you create them
