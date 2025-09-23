@@ -18,182 +18,69 @@
       </div>
       <div class="hero-img">
         <div class="profile-circle"></div>
-
       </div>
     </div>
   </section>
 
   <section class="projects" id="projects">
     <h2>My Projects</h2>
+    <div class="project-categories-container">
 
-    <div class="project-category">
-      <h3>Mobile Apps (Flutter)</h3>
-      <div class="project-grid">
-        <div class="project-card" data-project-id="real-estate-app">
-          <img src="assets/projects/real-estate/real-state1.jpg" alt="Real Estate App" class="project-thumbnail">
-          <div class="project-info">
-            <h4>Real Estate App</h4>
-            <p>Browse and search properties with sleek UI and smooth filtering.</p>
-            <div class="tech-stack">Flutter • Firebase • Dart</div>
-            <div class="project-links">
-              <a href="#" target="_blank" class="btn">Demo</a>
-              <a href="#" target="_blank" class="btn">GitHub</a>
-            </div>
+      <div class="category-folder" data-category="mobile-apps">
+        <div class="folder-header">
+          <h3>Mobile Apps (Flutter)</h3>
+          <img src="assets/icons/folder-icon.png" alt="Folder Icon" class="folder-icon">
+        </div>
+        <div class="folder-preview-image">
+          <img src="assets/projects/real-estate/real-state1.jpg" alt="Mobile App Preview">
+        </div>
+      </div>
+
+      <div class="category-folder" data-category="ai-ml-projects">
+        <div class="folder-header">
+          <h3>AI/Machine Learning Projects</h3>
+           <img src="assets/icons/ai-icon.png" alt="AI Icon" class="folder-icon">
+        </div>
+        <div class="folder-preview-image">
+          <img src="assets/images/placeholder-ai.jpg" alt="AI Project Preview">
+        </div>
+      </div>
+
+    </div> </section>
+
+  <div id="project-modal" class="project-modal">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <div class="modal-grid-layout">
+        <div class="modal-image-gallery">
+          <div class="gallery-inner"></div>
+          <button class="gallery-nav prev">&#10094;</button>
+          <button class="gallery-nav next">&#10095;</button>
+        </div>
+        <div class="modal-details">
+          <h3 id="modal-project-title">Project Title</h3>
+          <p id="modal-project-description">Detailed description of the project goes here.</p>
+          <div class="tech-stack" id="modal-project-tech"></div>
+          <div class="project-links">
+            <a href="#" target="_blank" class="btn" id="modal-demo-link">Demo</a>
+            <a href="#" target="_blank" class="btn" id="modal-github-link">GitHub</a>
           </div>
         </div>
-
-        <div class="project-card" data-project-id="grocery-app">
-          <img src="assets/projects/grocery_app/GroceryApp1.jpg" alt="Grocery App" class="project-thumbnail">
-          <div class="project-info">
-            <h4>Grocery App</h4>
-            <p>App for market with categories, sales, and fun interface.</p>
-            <div class="tech-stack">Flutter • Dart</div>
-            <div class="project-links">
-              <a href="#" target="_blank" class="btn">Demo</a>
-              <a href="#" target="_blank" class="btn">GitHub</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-card" data-project-id="meal-app">
-          <img src="assets/projects/Meal_app/foodCategories1.jpg" alt="Meal App" class="project-thumbnail">
-          <div class="project-info">
-            <h4>Meal App</h4>
-            <p>App for Meal recipes with categories, instructions & Vegan & vegetarian option.</p>
-            <div class="tech-stack">Flutter • Dart</div>
-            <div class="project-links">
-              <a href="#" target="_blank" class="btn">Demo</a>
-              <a href="#" target="_blank" class="btn">GitHub</a>
-            </div>
-          </div>
-        </div>
-
       </div>
     </div>
+  </div>
 
-    <section class="projects" id="projects">
-      <h2>My Projects</h2>
-
-      <div class="project-categories-container">
-
-        <div class="category-folder" data-category="mobile-apps">
-          <div class="folder-header">
-            <h3>Mobile Apps (Flutter)</h3>
-            <img src="assets/icons/folder-icon.png" alt="Folder Icon" class="folder-icon">
-          </div>
-          <div class="folder-preview-image">
-            <img src="assets/projects/real-estate/real-state1.jpg" alt="Mobile App Preview">
-          </div>
-          <div class="folder-content">
-            <div class="project-grid">
-              <div class="project-card" data-project-id="real-estate-app">
-                <img src="assets/projects/real-estate/real-state1.jpg" alt="Real Estate App" class="project-thumbnail">
-                <div class="project-info">
-                  <h4>Real Estate App</h4>
-                  <p>Browse and search properties...</p>
-                  <div class="tech-stack">Flutter • Firebase • Dart</div>
-                  <div class="project-links">
-                    <a href="#" target="_blank" class="btn">Demo</a>
-                    <a href="#" target="_blank" class="btn">GitHub</a>
-                  </div>
-                </div>
-              </div>
-              <div class="project-card" data-project-id="grocery-app">
-                <img src="assets/projects/grocery_app/GroceryApp1.jpg" alt="Grocery App" class="project-thumbnail">
-                <div class="project-info">
-                  <h4>Grocery App</h4>
-                  <p>App for market with categories...</p>
-                  <div class="tech-stack">Flutter • Dart</div>
-                  <div class="project-links">
-                    <a href="#" target="_blank" class="btn">Demo</a>
-                    <a href="#" target="_blank" class="btn">GitHub</a>
-                  </div>
-                </div>
-              </div>
-              <div class="project-card" data-project-id="meal-app">
-                <img src="assets/projects/Meal_app/foodCategories1.jpg" alt="Meal App" class="project-thumbnail">
-                <div class="project-info">
-                  <h4>Meal App</h4>
-                  <p>App for Meal recipes...</p>
-                  <div class="tech-stack">Flutter • Dart</div>
-                  <div class="project-links">
-                    <a href="#" target="_blank" class="btn">Demo</a>
-                    <a href="#" target="_blank" class="btn">GitHub</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+  <div id="category-modal" class="project-modal">
+    <div class="modal-content large-modal">
+      <span class="close-button">&times;</span>
+      <h3 id="category-modal-title"></h3>
+      <div id="category-modal-projects" class="project-grid">
         </div>
-
-        <div class="category-folder" data-category="ai-ml-projects">
-          <div class="folder-header">
-            <h3>AI/Machine Learning Projects</h3>
-            <img src="assets/icons/ai-icon.png" alt="AI Icon" class="folder-icon">
-          </div>
-          <div class="folder-preview-image">
-            <img src="assets/images/placeholder-ai.jpg" alt="AI Project Preview">
-          </div>
-          <div class="folder-content">
-            <div class="project-grid">
-              <div class="project-card" data-project-id="ai-project-1">
-                <img src="assets/images/placeholder-ai.jpg" alt="AI Project Placeholder" class="project-thumbnail">
-                <div class="project-info">
-                  <h4>AI Project Title</h4>
-                  <p>A brief description of your AI project.</p>
-                  <div class="tech-stack">Python • TensorFlow • Keras</div>
-                  <div class="project-links">
-                    <a href="#" target="_blank" class="btn">Demo</a>
-                    <a href="#" target="_blank" class="btn">GitHub</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-  </section>
+    </div>
+  </div>
 
   <script src="js/script.js"></script>
 
-
 </body>
-
-<div id="project-modal" class="project-modal">
-  <div class="modal-content">
-    <span class="close-button">&times;</span>
-    <div class="modal-grid-layout">
-      <div class="modal-image-gallery">
-        <div class="gallery-inner">
-        </div>
-        <button class="gallery-nav prev">&#10094;</button>
-        <button class="gallery-nav next">&#10095;</button>
-      </div>
-
-      <div class="modal-details">
-        <h3 id="modal-project-title">Project Title</h3>
-        <p id="modal-project-description">Detailed description of the project goes here.</p>
-        <div class="tech-stack" id="modal-project-tech"></div>
-        <div class="project-links">
-          <a href="#" target="_blank" class="btn" id="modal-demo-link">Demo</a>
-          <a href="#" target="_blank" class="btn" id="modal-github-link">GitHub</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div id="category-modal" class="project-modal">
-  <div class="modal-content large-modal">
-    <span class="close-button">&times;</span>
-    <h3 id="category-modal-title"></h3>
-    <div id="category-modal-projects" class="project-grid">
-    </div>
-  </div>
-</div>
-
 
 </html>
