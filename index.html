@@ -23,67 +23,73 @@
     </div>
   </section>
 
-  <section class="projects" id="projects">
-    <h2 class="section-title">My Projects</h2>
-    <div class="projects-grid">
+<section class="projects" id="projects">
+    <h2>My Projects</h2>
 
-      <!-- Project 1 -->
-      <div class="project-card">
-        <img src="assets\projects\real-estate\real-state1.jpg"
-          alt="Real Estate App">
-        <div class="project-content">
-          <h3>Real Estate App</h3>
-          <p>Browse and search properties with sleek UI and smooth filtering.</p>
-          <p class="tech-stack">Flutter • Firebase • Dart</p>
-          <div class="project-links">
-            <a href="#" target="_blank">🔗 Demo</a>
-            <a href="#" target="_blank">💻 GitHub</a>
-          </div>
-        </div>
-        <!-- Real Estate Project Card -->
-        <div class="project-card" onclick="openModal('realEstate')">
-          <img src="assets\projects\real-estate\real-state1.jpg"
-            alt="Real Estate App">
-          <div class="project-content">
-            <h3>Real Estate App</h3>
-            <p>Interactive app for browsing properties with Firebase backend.</p>
-          </div>
-        </div>
+    <div class="project-category">
+        <h3>Mobile Apps (Flutter)</h3>
+        <div class="project-grid">
+            <div class="project-card" data-project-id="real-estate-app">
+                <img src="assets/images/real-state1.jpg" alt="Real Estate App" class="project-thumbnail">
+                <div class="project-info">
+                    <h4>Real Estate App</h4>
+                    <p>Browse and search properties with sleek UI and smooth filtering.</p>
+                    <div class="tech-stack">Flutter • Firebase • Dart</div>
+                    <div class="project-links">
+                        <a href="#" target="_blank" class="btn">Demo</a>
+                        <a href="#" target="_blank" class="btn">GitHub</a>
+                    </div>
+                </div>
+            </div>
 
-      </div>
+            <div class="project-card" data-project-id="grocery-app">
+                <img src="assets/images/grocery1.jpg" alt="Grocery App" class="project-thumbnail">
+                <div class="project-info">
+                    <h4>Grocery App</h4>
+                    <p>App for market with categories, sales, and fun interface.</p>
+                    <div class="tech-stack">Flutter • Dart</div>
+                    <div class="project-links">
+                        <a href="#" target="_blank" class="btn">Demo</a>
+                        <a href="#" target="_blank" class="btn">GitHub</a>
+                    </div>
+                </div>
+            </div>
 
-      <!-- Project 2 -->
-      <div class="project-card">
-        <img src="assets\projects\grocery_app\GroceryApp1.jpg" alt="Grocery App">
-        <div class="project-content">
-          <h3>Grocery App</h3>
-          <p>App for market with categories, sales, and fun interface.</p>
-          <p class="tech-stack">Flutter • Dart</p>
-          <div class="project-links">
-            <a href="#" target="_blank">🔗 Demo</a>
-            <a href="#" target="_blank">💻 GitHub</a>
-          </div>
-        </div>
-      </div>
+            <div class="project-card" data-project-id="meal-app">
+                <img src="assets/images/meal1.jpg" alt="Meal App" class="project-thumbnail">
+                <div class="project-info">
+                    <h4>Meal App</h4>
+                    <p>App for Meal recipes with categories, instructions & Vegan & vegetarian option.</p>
+                    <div class="tech-stack">Flutter • Dart</div>
+                    <div class="project-links">
+                        <a href="#" target="_blank" class="btn">Demo</a>
+                        <a href="#" target="_blank" class="btn">GitHub</a>
+                    </div>
+                </div>
+            </div>
 
-      <!-- Project 3 -->
-      <div class="project-card">
-        <img src="assets\projects\Meal_app\foodCategories1.jpg" alt="Meal App">
-        <div class="project-content">
-          <h3>Meal App</h3>
-          <p>App for Meal receipes with categories, instructions and Vegan & vegiterian option.</p>
-          <p class="tech-stack">Flutter • Dart</p>
-          <div class="project-links">
-            <a href="#" target="_blank">🔗 Demo</a>
-            <a href="#" target="_blank">💻 GitHub</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Add more projects below like this -->
-
+            </div>
     </div>
-  </section>
+
+    <div class="project-category">
+        <h3>AI/Machine Learning Projects</h3>
+        <div class="project-grid">
+            <div class="project-card" data-project-id="ai-project-1">
+                <img src="assets/images/placeholder-ai.jpg" alt="AI Project Placeholder" class="project-thumbnail">
+                <div class="project-info">
+                    <h4>AI Project Title</h4>
+                    <p>A brief description of your AI project.</p>
+                    <div class="tech-stack">Python • TensorFlow • Keras</div>
+                    <div class="project-links">
+                        <a href="#" target="_blank" class="btn">Demo</a>
+                        <a href="#" target="_blank" class="btn">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </div>
+
+</section>
 
   <script>
     function openModal(id) {
@@ -125,35 +131,28 @@
 
 </body>
 
-<!-- Project Modal -->
-<div class="modal" id="realEstate">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal('realEstate')">&times;</span>
-    <h2>Real Estate App</h2>
-    <p>
-      A real estate listing app built using Flutter, Dart, and Firebase Firestore. Supports filtering, dynamic search,
-      user authentication, and real-time data updates. Built with responsive UI using Flutter’s Material widgets and
-      Firebase’s backend services.
-    </p>
-    <ul class="tech-used">
-      <li>Flutter</li>
-      <li>Dart</li>
-      <li>Firebase Auth</li>
-      <li>Cloud Firestore</li>
-    </ul>
+<div id="project-modal" class="project-modal">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <div class="modal-grid-layout">
+            <div class="modal-image-gallery">
+                <div class="gallery-inner">
+                    </div>
+                <button class="gallery-nav prev">&#10094;</button>
+                <button class="gallery-nav next">&#10095;</button>
+            </div>
 
-    <!-- Image Slider -->
-    <div class="slider">
-      <img class="slide active" src="assets\projects\real-estate\real-state1.jpg"
-        alt="Slide 1">
-      <img class="slide" src="assets\projects\real-estate\real-state2.jpg"
-        alt="Slide 2">
-      <img class="slide" src="assets\projects\real-estate\real-state3.jpg"
-        alt="Slide 3">
-      <button class="prev" onclick="prevSlide()">❮</button>
-      <button class="next" onclick="nextSlide()">❯</button>
+            <div class="modal-details">
+                <h3 id="modal-project-title">Project Title</h3>
+                <p id="modal-project-description">Detailed description of the project goes here.</p>
+                <div class="tech-stack" id="modal-project-tech"></div>
+                <div class="project-links">
+                    <a href="#" target="_blank" class="btn" id="modal-demo-link">Demo</a>
+                    <a href="#" target="_blank" class="btn" id="modal-github-link">GitHub</a>
+                </div>
+                </div>
+        </div>
     </div>
-  </div>
 </div>
 
 
