@@ -201,4 +201,26 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     window.addEventListener('resize', updateGalleryPosition);
+
+
+    // ===========================================
+    // ===== PASTE THE NEW ANIMATION CODE HERE =====
+    // ===========================================
+
+    // --- Scroll Animation Logic ---
+    const scrollObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                scrollObserver.unobserve(entry.target); // Optional: stop observing once animated
+            }
+        });
+    }, {
+        threshold: 0.1 // Trigger when 10% of the element is visible
+    });
+
+    const elementsToAnimate = document.querySelectorAll('.animate-on-scroll');
+    elementsToAnimate.forEach((element) => {
+        scrollObserver.observe(element);
+    });
 });
