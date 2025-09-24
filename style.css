@@ -107,7 +107,7 @@ h4 {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-image: url('assets/images/profile.jpg');
+  background-image: url('../assets/images/profile.jpg');
   /* CHANGE THIS PATH IF NEEDED */
   background-size: cover;
   background-position: center;
@@ -132,13 +132,12 @@ h4 {
   animation: spin 4s linear infinite;
 }
 
-/* === ABOUT ME SECTION === */
+/* === ABOUT ME SECTION (UPGRADED) === */
 .about {
-  padding: 6rem 2rem;
-  background-color: var(--cream);
-  /* Or a slightly different shade if you prefer */
-  overflow-x: hidden;
-  /* Prevents horizontal scrollbars during animation */
+  padding: 8rem 2rem;
+  background-color: #E6E6BE;
+  /* A slightly different shade of cream for contrast */
+  overflow: hidden;
 }
 
 .about-content {
@@ -146,94 +145,120 @@ h4 {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
-  /* Single column on mobile */
-  gap: 3rem;
+  gap: 4rem;
   align-items: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .about-content {
-    grid-template-columns: 2fr 1fr;
-    /* Two columns on larger screens */
+    grid-template-columns: 3fr 2fr;
+    /* Give more space to text */
   }
 }
 
 .about-text h2 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   margin-bottom: 1.5rem;
-  color: var(--heading-color);
-  position: relative;
-  padding-bottom: 0.5rem;
+  line-height: 1.2;
 }
 
-/* Underline effect for the heading */
 .about-text h2::after {
   content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 70px;
+  display: block;
+  width: 80px;
   height: 4px;
   background-color: var(--blood-red);
   border-radius: 2px;
+  margin-top: 1rem;
 }
 
 .about-text p {
   font-size: 1.1rem;
-  line-height: 1.7;
-  margin-bottom: 2rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
 }
 
-.about-text p strong {
-  color: var(--syracuse-red-orange);
+.about-text .about-hook {
+  font-size: 1.3rem;
   font-weight: 600;
+  color: var(--syracuse-red-orange);
+  margin-bottom: 2.5rem;
 }
 
+/* === PAWN ANIMATION === */
 .about-visual {
-  display: none;
-  /* Hidden on mobile for a cleaner look */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  perspective: 1000px;
+  /* Creates a 3D space for the pawn */
+}
+
+.pawn-container {
   position: relative;
-  height: 250px;
-  border-radius: 10px;
+  transform-style: preserve-3d;
+  animation: float 6s ease-in-out infinite;
+  /* Floating animation */
 }
 
-@media (min-width: 768px) {
-  .about-visual {
-    display: block;
-    /* Visible on larger screens */
+.pawn-piece {
+  font-size: 180px;
+  /* A very large pawn */
+  color: var(--indigo-dye);
+  text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 2;
+  transition: transform 0.5s ease;
+}
+
+.pawn-shadow {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 20px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  filter: blur(10px);
+  z-index: 1;
+  animation: shadow-size 6s ease-in-out infinite;
+  /* Shadow animation */
+}
+
+/* Keyframe animations for floating pawn and its shadow */
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0) rotateY(0deg);
   }
 
-  /* Abstract shape design using pseudo-elements */
-  .about-visual::before,
-  .about-visual::after {
-    content: '';
-    position: absolute;
-    border-radius: 10px;
-    transition: all 0.5s ease-in-out;
+  50% {
+    transform: translateY(-30px) rotateY(20deg);
+  }
+}
+
+@keyframes shadow-size {
+
+  0%,
+  100% {
+    transform: translateX(-50%) scale(1);
+    opacity: 0.2;
   }
 
-  .about-visual::before {
-    width: 100%;
-    height: 100%;
-    background-color: var(--indigo-dye);
+  50% {
+    transform: translateX(-50%) scale(0.8);
     opacity: 0.1;
-    transform: rotate(-10deg);
-  }
-
-  .about-visual::after {
-    width: 100%;
-    height: 100%;
-    border: 3px solid var(--syracuse-red-orange);
-    transform: rotate(5deg);
   }
 }
-
 
 /* === SCROLL ANIMATION PREPARATION === */
 .animate-on-scroll {
   opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  transform: translateY(60px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
 .animate-on-scroll.is-visible {
