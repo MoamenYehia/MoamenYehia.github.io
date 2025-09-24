@@ -14,6 +14,61 @@
   --accent-color-2: var(--amber);
 }
 
+/* === SPLASH SCREEN INTRO === */
+.splash-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.splash-pawn {
+  font-size: 300px;
+  /* A giant pawn! */
+  color: var(--indigo-dye);
+  animation: pawn-intro 2.5s ease-in-out forwards;
+  /* The main pawn animation */
+  text-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Add a 'hidden' state for the main content to start with */
+body.is-loading .hero {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+/* Smooth transition for the hero section when it appears */
+.hero {
+  transition: opacity 1s ease-out 0.5s, transform 1s ease-out 0.5s;
+}
+
+
+/* === KEYFRAME ANIMATIONS === */
+/* Keyframes for the pawn's rotation and shrink effect */
+@keyframes pawn-intro {
+  0% {
+    transform: scale(0.5) rotateY(0deg);
+    opacity: 0;
+  }
+
+  50% {
+    transform: scale(1.2) rotateY(180deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(0) rotateY(360deg);
+    opacity: 0;
+  }
+}
+
 /* === GENERAL STYLES === */
 body {
   font-family: 'Rubik', sans-serif;
@@ -98,8 +153,8 @@ h4 {
 
 .hero-img {
   position: relative;
-  width: 250px;
-  height: 250px;
+  width: 250px;  /* Explicitly set the width */
+  height: 250px; /* Explicitly set the height */
   animation: floatUp 1.2s ease-in-out;
 }
 
@@ -107,13 +162,11 @@ h4 {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-image: url('../assets/images/profile.jpg');
-  /* CHANGE THIS PATH IF NEEDED */
+  /* Correct path relative to the CSS file's location */
+  background-image: url('assets/images/profile.jpg');
   background-size: cover;
   background-position: center;
   border: 5px solid transparent;
-  background-clip: padding-box;
-  /* Important for the gradient border */
   position: relative;
   z-index: 1;
 }

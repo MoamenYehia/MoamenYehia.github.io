@@ -1,4 +1,28 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // ===========================================
+    // ===== PASTE THE NEW INTRO CODE HERE =====
+    // ===========================================
+
+    // --- Splash Screen Intro Logic ---
+    const splashScreen = document.querySelector('.splash-screen');
+    const body = document.querySelector('body');
+
+    // Add a class to the body to hide the main content initially
+    body.classList.add('is-loading');
+
+    // After 3 seconds, start the fade-out process
+    setTimeout(() => {
+        if (splashScreen) {
+            splashScreen.style.opacity = '0';
+            // After the splash screen has faded, remove the loading class from the body
+            splashScreen.addEventListener('transitionend', () => {
+                splashScreen.style.display = 'none';
+                body.classList.remove('is-loading');
+            }, { once: true }); // Ensure the event listener only runs once
+        }
+    }, 3000); // 3 seconds total duration
+
+    // ===========================================
 
     // Define your projects data
     const projectsData = {
@@ -84,10 +108,10 @@ document.addEventListener('DOMContentLoaded', () => {
             img.alt = project.title + " screenshot";
             galleryInner.appendChild(img);
         });
-        
+
         currentImageIndex = 0;
         updateGalleryPosition();
-        
+
         projectModal.style.display = 'flex';
         document.body.style.overflow = 'hidden';
     }
@@ -171,7 +195,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
             });
         }
-        
+
         categoryModal.style.display = 'flex';
         document.body.style.overflow = 'hidden';
     }
