@@ -153,8 +153,8 @@ h4 {
 
 .hero-img {
   position: relative;
-  width: 250px;  /* Explicitly set the width */
-  height: 250px; /* Explicitly set the height */
+  width: 350px;  /* Explicitly set the width */
+  height: 350px; /* Explicitly set the height */
   animation: floatUp 1.2s ease-in-out;
 }
 
