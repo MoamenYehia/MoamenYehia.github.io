@@ -153,8 +153,10 @@ h4 {
 
 .hero-img {
   position: relative;
-  width: 350px;  /* Explicitly set the width */
-  height: 350px; /* Explicitly set the height */
+  width: 350px;
+  /* Explicitly set the width */
+  height: 350px;
+  /* Explicitly set the height */
   animation: floatUp 1.2s ease-in-out;
 }
 
@@ -675,6 +677,121 @@ h4 {
   gap: 1.5rem;
   padding: 1.5rem 0;
   /* No side padding, let the modal content handle it */
+}
+
+/* === SKILLSET SECTION === */
+.skillset {
+  padding: 6rem 2rem;
+  background-color: var(--background-color);
+}
+
+.skillset h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 4rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.skill-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 2rem 1rem;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.skill-card img {
+  height: 60px;
+  margin-bottom: 1rem;
+}
+
+.skill-card h3 {
+  font-size: 1.1rem;
+  color: var(--heading-color);
+  margin: 0;
+}
+
+/* === CONTACT SECTION === */
+.contact {
+  padding: 8rem 2rem;
+  background-color: var(--indigo-dye);
+  /* Using a dark background for contrast */
+  color: var(--cream);
+  text-align: center;
+}
+
+.contact-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.contact h2 {
+  font-size: 3rem;
+  color: #fff;
+  /* White heading on dark background */
+  margin-bottom: 1.5rem;
+}
+
+.contact p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  margin-bottom: 2.5rem;
+  opacity: 0.9;
+}
+
+.contact .btn {
+  background-color: var(--amber);
+  /* Using a bright accent color */
+  color: var(--indigo-dye);
+  padding: 1rem 2.5rem;
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+}
+
+.contact .btn:hover {
+  background-color: #fff;
+}
+
+.social-links a {
+  color: var(--cream);
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0 1.5rem;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.social-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--syracuse-red-orange);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #fff;
+}
+
+.social-links a:hover::after {
+  transform: scaleX(1);
 }
 
 /* === KEYFRAME ANIMATIONS === */

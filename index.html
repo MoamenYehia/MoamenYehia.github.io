@@ -7,6 +7,9 @@
   <title>Moamen Yehia | AI Engineer</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
 </head>
 
 <body>
@@ -48,6 +51,37 @@
     </div>
   </section>
 
+  <section class="skillset" id="skillset">
+    <h2 class="animate-on-scroll">My Core Technologies</h2>
+    <div class="skills-grid animate-on-scroll">
+      <div class="skill-card">
+
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg" alt="Flutter Icon">
+        <h3>Flutter</h3>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dart/dart-original.svg" alt="Dart Icon">
+        <h3>Dart</h3>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python Icon">
+        <h3>Python</h3>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-plain.svg" alt="Firebase Icon">
+        <h3>Firebase</h3>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow Icon">
+        <h3>TensorFlow</h3>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git Icon">
+        <h3>Git & GitHub</h3>
+      </div>
+    </div>
+  </section>
+
   <section class="projects" id="projects">
     <h2>My Projects</h2>
     <div class="project-categories-container">
@@ -55,7 +89,7 @@
       <div class="category-folder" data-category="mobile-apps">
         <div class="folder-header">
           <h3>Mobile Apps (Flutter)</h3>
-          <img src="assets/icons/Gemini_Generated_Image_v28zg3v28zg3v28z.png" alt="Folder Icon" class="folder-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg" alt="Folder Icon" class="folder-icon">
         </div>
         <div class="folder-preview-image">
           <img src="assets/projects/real-estate/real-state1.jpg" alt="Mobile App Preview">
@@ -68,45 +102,66 @@
           <img src="assets/icons/Gemini_Generated_Image_v28zg3v28zg3v28z (1).png" alt="AI Icon" class="folder-icon">
         </div>
         <div class="folder-preview-image">
-          <img src="assets/icons/Gemini_Generated_Image_v28zg3v28zg3v28z (1).png" alt="AI Project Preview">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg" alt="AI Project Preview">
         </div>
       </div>
 
     </div>
   </section>
 
-  <div id="project-modal" class="project-modal">
-    <div class="modal-content">
-      <span class="close-button">&times;</span>
-      <div class="modal-grid-layout">
-        <div class="modal-image-gallery">
-          <div class="gallery-inner"></div>
-          <button class="gallery-nav prev">&#10094;</button>
-          <button class="gallery-nav next">&#10095;</button>
-        </div>
-        <div class="modal-details">
-          <h3 id="modal-project-title">Project Title</h3>
-          <p id="modal-project-description">Detailed description of the project goes here.</p>
-          <div class="tech-stack" id="modal-project-tech"></div>
-          <div class="project-links">
-            <a href="#" target="_blank" class="btn" id="modal-demo-link">Demo</a>
-            <a href="#" target="_blank" class="btn" id="modal-github-link">GitHub</a>
-          </div>
+  <section class="projects" id="projects">
+    ...
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="contact-content animate-on-scroll">
+      <h2>Let's Build Something Great.</h2>
+      <p>
+        Have a project in mind or just want to connect? I'm always open to new opportunities and collaborations. Feel
+        free to reach out!
+      </p>
+      <a href="mailto:your-email@example.com" class="btn">Say Hello</a>
+      <div class="social-links">
+        <a href="https://github.com/your-username" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/your-profile" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+  ...
+</body>
+
+<div id="project-modal" class="project-modal">
+  <div class="modal-content">
+    <span class="close-button">&times;</span>
+    <div class="modal-grid-layout">
+      <div class="modal-image-gallery">
+        <div class="gallery-inner"></div>
+        <button class="gallery-nav prev">&#10094;</button>
+        <button class="gallery-nav next">&#10095;</button>
+      </div>
+      <div class="modal-details">
+        <h3 id="modal-project-title">Project Title</h3>
+        <p id="modal-project-description">Detailed description of the project goes here.</p>
+        <div class="tech-stack" id="modal-project-tech"></div>
+        <div class="project-links">
+          <a href="#" target="_blank" class="btn" id="modal-demo-link">Demo</a>
+          <a href="#" target="_blank" class="btn" id="modal-github-link">GitHub</a>
         </div>
       </div>
     </div>
   </div>
+</div>
 
-  <div id="category-modal" class="project-modal">
-    <div class="modal-content large-modal">
-      <span class="close-button">&times;</span>
-      <h3 id="category-modal-title"></h3>
-      <div id="category-modal-projects" class="project-grid">
-      </div>
+<div id="category-modal" class="project-modal">
+  <div class="modal-content large-modal">
+    <span class="close-button">&times;</span>
+    <h3 id="category-modal-title"></h3>
+    <div id="category-modal-projects" class="project-grid">
     </div>
   </div>
+</div>
 
-  <script src="js/script.js"></script>
+<script src="js/script.js"></script>
 
 </body>
 
